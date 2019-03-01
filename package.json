@@ -1,0 +1,38 @@
+{
+  "name": "card-grid",
+  "version": "0.0.0",
+  "description": "Pure and simple Card Grid Web Component inspired by Google Web Fundamentals and Templates the Hard Way.",
+  "browser": "./index.js",
+  "module": "./index.js",
+  "scripts": {
+    "start": "http-server -o",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postversion": "git push --follow-tags && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinkhominid/card-grid.git"
+  },
+  "keywords": [
+    "card",
+    "grid",
+    "web",
+    "component",
+    "components",
+    "css",
+    "layout"
+  ],
+  "author": "John Ericson <pinkhominid@birdbomb.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pinkhominid/card-grid/issues"
+  },
+  "homepage": "https://github.com/pinkhominid/card-grid#readme",
+  "files": [
+    "/index.js",
+    "/lib/"
+  ],
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}

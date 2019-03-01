@@ -7,12 +7,13 @@ npm i -S card-grid
 
 ## Usage
 ```html
-<script type="module" src="./node_modules/card-grid/card-grid.js" async></script>
+<script type="module" src="./node_modules/card-grid/index.js" async></script>
 ```
 OR
 ```javascript
-import * from './node_modules/card-grid/card-grid.js';
+import './node_modules/card-grid/index.js';
 ```
+See demo and lib for finer points.
 
 ## License
 MIT
