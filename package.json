@@ -1,7 +1,7 @@
 {
   "name": "card-grid",
   "version": "0.1.1",
-  "description": "Pure and simple Card Grid Web Component inspired by Google Web Fundamentals and Templates the Hard Way.",
+  "description": "Pure and simple card grid Web Component inspired by Google Web Fundamentals and Templates the Hard Way.",
   "scripts": {
     "start": "http-server -o"
   },
