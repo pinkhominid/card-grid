@@ -6,14 +6,18 @@ npm i -S card-grid
 ```
 
 ## Usage
-```html
-<script type="module" src="./node_modules/card-grid/index.js" async></script>
+```javascript
+import { CardGrid, CardItem } from './node_modules/card-grid/dist-web/index.js';
 ```
 OR
-```javascript
-import './node_modules/card-grid/index.js';
+```html
+<script type="module" src="./node_modules/card-grid/dist-web/index.min.js" async></script>
 ```
-See demo and lib for finer points.
+OR
+```html
+<script type="module" src="https://unpkg.com/card-grid/dist-web/index.min.js" async></script>
+```
+See /demo and /src for finer points.
 
 ## License
 MIT
