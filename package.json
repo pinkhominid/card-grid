@@ -2,12 +2,21 @@
   "name": "card-grid",
   "version": "0.1.0",
   "description": "Pure and simple Card Grid Web Component inspired by Google Web Fundamentals and Templates the Hard Way.",
-  "browser": "./index.js",
-  "module": "./index.js",
   "scripts": {
-    "start": "http-server -o",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postversion": "git push --follow-tags && npm publish"
+    "start": "http-server -o"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ],
+      [
+        "pika-plugin-minify"
+      ]
+    ]
   },
   "repository": {
     "type": "git",
@@ -28,11 +37,10 @@
     "url": "https://github.com/pinkhominid/card-grid/issues"
   },
   "homepage": "https://github.com/pinkhominid/card-grid#readme",
-  "files": [
-    "/index.js",
-    "/lib/"
-  ],
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "@pika/plugin-build-web": "^0.3.12",
+    "@pika/plugin-standard-pkg": "^0.3.12",
+    "http-server": "^0.11.1",
+    "pika-plugin-minify": "^0.1.0"
   }
 }
