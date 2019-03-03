@@ -1,16 +1,20 @@
 <!doctype html><html lang=en><meta charset=utf-8><title>Demo</title>
+
 <style>
   body {
     margin: 0;
-    color: #444;
     font-family: sans-serif;
+    color: #444;
+    transition: all .1s ease-in;
   }
+
+  /* styling for example card contents */
   card-item {
     display: flex;
     flex-direction: column;
     min-height: 400px;
     text-align: center;
-    background: #fefefe;
+    background: #fafafa;
   }
   card-item h1 {
     flex-grow: 1;
@@ -18,17 +22,35 @@
     align-items: center;
     justify-content: center;
     margin: 0;
-    background: #f2f2f2;
     font-weight: normal;
     font-size: 1.25em;
+    background: #e2e2e2;
   }
   .rating {
     margin: 1em;
+  }
+
+  /* dark example */
+  .dark-toggle {
+    position: absolute;
+    right: 0;
+    margin: 6px;
+  }
+  .dark body {
+    background: #141414;
+    color: #fff;
+  }
+  .dark card-item {
+    background: #333;
+  }
+  .dark card-item h1 {
+    background: #222;
   }
 </style>
 
 <script type=module src=../src/index.js async></script>
 
+<button class="dark-toggle">Dark/Light</button>
 <card-grid>
   <card-item>
     <h1>Card Item</h1>
@@ -91,3 +113,9 @@
     <div class=rating>★ ★ ★ ★ ★</div>
   </card-item>
 </card-grid>
+
+<script>
+  document.querySelector('.dark-toggle').addEventListener('click',
+    () => document.documentElement.classList.toggle('dark')
+  );
+</script>

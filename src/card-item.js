@@ -11,16 +11,15 @@ template.innerHTML = `
       overflow: hidden;
       position: relative;
       border-radius: 0.25rem;
-      filter: contrast(97%);
       box-shadow: 0 3px 5px -3px rgba(0, 0, 0, 0.2);
-      transition: all .1s ease-in;
+      transition: filter .1s ease-in, box-shadow .1s ease-in, transform .1s ease-in;
     }
     :host([hidden]) {
       display: none;
     }
     :host(:hover),
     :host(:focus) {
-      filter: contrast(100%);
+      filter: brightness(105%);
       box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
       transform: translate(0, -1px);
     }

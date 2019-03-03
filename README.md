@@ -10,20 +10,38 @@
 
 ## Install
 ```sh
-npm i -S card-grid
+npm install card-grid
 ```
 
-## Usage
+## Import
+```javascript
+import './node_modules/card-grid/dist-web/index.js';
+```
+OR
 ```javascript
 import { CardGrid, CardItem } from './node_modules/card-grid/dist-web/index.js';
 ```
 OR
 ```html
-<script type="module" src="./node_modules/card-grid/dist-web/index.min.js" async></script>
+<script type="module" src="./node_modules/card-grid/dist-web/index.min.js"></script>
 ```
 OR
 ```html
-<script type="module" src="https://unpkg.com/card-grid/dist-web/index.min.js" async></script>
+<script type="module" src="https://unpkg.com/card-grid/dist-web/index.min.js"></script>
+```
+
+## Use
+```html
+<card-grid>
+  <card-item>
+    <h1>Card Item</h1>
+    <div class=rating>★ ★ ★ ★ ★</div>
+  </card-item>
+  <card-item>
+    <h1>Card Item</h1>
+    <div class=rating>★ ★ ★ ★ ★</div>
+  </card-item>
+</card-grid>
 ```
 See /demo and /src for finer points.
 
