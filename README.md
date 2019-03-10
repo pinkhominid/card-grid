@@ -18,16 +18,18 @@ npm install card-grid
 import './node_modules/card-grid/dist-web/index.js';
 ```
 OR
-```javascript
-import { CardGrid, CardItem } from './node_modules/card-grid/dist-web/index.js';
-```
-OR
 ```html
 <script type="module" src="./node_modules/card-grid/dist-web/index.min.js"></script>
 ```
+
+## CDN Import
+You can also just import from CDN without installing
+```javascript
+import 'https://unpkg.com/card-grid@^0.1/dist-web/index.min.js';
+```
 OR
 ```html
-<script type="module" src="https://unpkg.com/card-grid/dist-web/index.min.js"></script>
+<script type="module" src="https://unpkg.com/card-grid@^0.1/dist-web/index.min.js"></script>
 ```
 
 ## Use
